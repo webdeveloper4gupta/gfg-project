@@ -1,0 +1,147 @@
+{% include "header.html" %}
+{% comment %} here i make body {% endcomment %}
+<div>
+<h1>Welcome to phone_price predictor page</h1>
+<small>Enter the details corectly  and please donot submit any column empty. <br> Else you get error.</small>
+   <form method='POST'>
+        {% csrf_token %}
+        <label for="">Product  ID</label>
+        <input type="text" name="prodid" id="" >
+        <br>
+        <br>
+        <label for="">Sale</label>
+        <input type="text" name="prodsale" >
+        <br>
+        <br>
+        <label for="">weight</label>
+        <input type="text" name="prodweight" >
+        <br>
+        <br>
+        <label for="">resoloution</label>
+         <select name="resol" id="">
+          <option value="5.50">5.50</option>
+          <option value="5.00">5.00</option>
+          <option value="5.70">5.70</option>
+          <option value="4.00">4.00</option>
+          <option value="5.10">5.10</option>
+          <option value="4.50">4.50</option>
+          <option value="5.20">5.20</option>
+          <option value="6.00">6.00</option>
+          <option value="8.00">8.00</option>
+          <option value="7.00">7.00</option>
+          <option value="4.80">4.80</option>
+          <option value="2.20">2.20</option>
+          <option value="2.40">2.40</option>
+          <option value="4.70">4.70</option>
+          <option value="4.66">4.66</option>
+          <option value="12.20">12.20</option>
+          <option value="1.40">1.40</option>
+          <option value="5.15">5.15</option>
+          <option value="5.43">5.43</option>
+          <option value="1.50">1.50</option>
+          <option value="10.10">10.10</option>
+          <option value="5.60">5.60</option>
+          <option value="5.30">5.30</option>
+          <option value="5.46">5.46</option>
+         </select>
+        <br>
+        <br>
+        <label for="">ppi</label>
+           <select name="ppi" id="">
+           <option value="294">294</option>
+           <option value="401">401</option>
+           <option value="534">534</option>
+           <option value="233">233</option>
+           <option value="245">245</option>
+           <option value="432">432</option>
+           <option value="515">515</option>
+           <option value="428">428</option>
+           <option value="128">128</option>
+           <option value="367">367</option>
+           <option value="200">200</option>
+           <option value="306">306</option>
+           <option value="441">441</option>
+           <option value="170">170</option>
+           <option value="220">220</option>
+           <option value="386">386</option>
+           <option value="424">424</option>
+           <option value="221">221</option>
+           <option value="224">224</option>
+           <option value="129">129</option>
+           <option value="806">806</option>
+           <option value="184">184</option>
+           <option value="247">247</option>
+           <option value="258">258/option>
+           <option value="403">403</option>
+           <option value="167">167</option>
+           <option value="513">513</option>
+           <option value="440">440</option>
+           <option value="166">166</option>
+           <option value="277">277</option>
+           <option value="538">538</option>
+           <option value="189">189</option>
+           <option value="235">235</option>
+           <option value="160">160</option>
+           <option value="541">541</option>
+           <option value="121">121</option>
+           <option value="283">283</option>
+           <option value="524">524</option>
+           <option value="282">282</option>
+           <option value="577">577</option>
+           <option value="469">469</option>
+           <option value="218">218</option>
+           <option value="178">178</option>
+           <option value="312">312</option>
+           <option value="187">187/option>
+           </select>
+        <br>
+        <br>
+        <label for="">cpu core</label>
+        <input type="text" name="cpucore">
+        <br>
+        <br>
+        <label for="">cpu freq</label>
+        <input type="text" name="cpufreq" >
+        <br>
+        <br>
+        <label for="">internal mem</label>
+        <input type="text" name="internmem" >
+
+        <br>
+        <br>
+        <label for="">ram</label>
+        <select name="ram" id="">
+        <option value="1.000">1.000</option>
+        <option value="2.000">2.000</option>
+        <option value="3.000">3.000</option>
+        <option value="4.000">4.000</option>
+        <option value="0.512">0.512</option>
+        <option value="6.000">6.000</option>
+        <option value="0.004">0.004</option>
+        <option value="1.500">1.500</option>
+        <option value="0.008">0.008</option>
+        <option value="0.032">0.032</option>
+        <option value="0.128">0.128</option>
+        </select>
+        <br>
+        <br>
+        <label for="">RearCam</label>
+        <input type="text" name="rearcam">
+        <br>
+        <br>
+        <label for="">Front_Cam</label>
+        <input type="text" name="front_cam">
+        <br>
+        <br>
+        <label for="">battery</label>
+        <input type="text" name="battery">
+        <br>
+        <br>
+        <label for="">thickness</label>
+        <input type="text">
+
+   
+   </form>
+</div>
+{% comment %} here i make the footer {% endcomment %}
+{% include "footer.html" %}

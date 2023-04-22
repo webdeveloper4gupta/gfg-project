@@ -1,0 +1,60 @@
+#jumb1 {
+          width: 100vw;
+          height: 40vh;
+          position: absolute;
+
+}
+
+#body_index {
+          background-color: antiquewhite;
+          color: green;
+          height: 300vh;
+}
+
+* {
+          margin: 0;
+          padding: 0;
+
+}
+
+
+#footer {
+          background-color: black;
+          color: grey;
+}
+
+#jumb2 {
+          width: 90vw;
+          font-size: 50px;
+          color: aqua;
+          padding: 30px;
+          font-style: oblique;
+          font-weight: bold;
+}
+
+#sec1 {
+          height: 40vh;
+}
+
+.slid1 {
+          width: 100vw;
+          height: 50vh;
+}
+
+#secs1 {
+          font-size: 4vh;
+          color: black;
+          font-weight: bold;
+          text-align: center;
+}
+
+.cardimg {
+          width: 20vw;
+}
+#head1{
+          position:sticky;
+          top:0;
+}
+.mahajan1{
+          color:blue;
+}

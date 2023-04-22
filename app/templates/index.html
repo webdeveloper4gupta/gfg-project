@@ -1,0 +1,116 @@
+{% include "header.html" %}
+{% load static %}
+          {% comment %} here body start {% endcomment %}
+          <div id="body_index">
+
+              <section id="sec1">
+              <img src="{% static './image/header.jpg' %}" alt="jumbloton image" id="jumb1" >
+              <p ><marquee behavior="alternate" scrollamount="12" direction="left" id="jumb2">Welcome to Price predcitor web application</marquee></p>
+              </section> 
+              <div>
+              <section id="secs1">
+              Our speciality is to providing the best price <br>
+              for your dream investment.
+              </section>
+                <div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators" >
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static './image/slidder1.jpg' %}"   class="slid1" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static './image/slidder2.jpg' %}" class="slid1"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static './image/lap_img.png' %}"  class="slid1" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                
+                
+                </div>
+              <h1>This is Home page of our website</h1>
+              welcome to code world
+              </div> 
+
+       {% comment %} sections for card {% endcomment %}
+                   <div class="card container mb-1 text-dark" >
+          <div class="card-body row" >
+                  <div class="col-4">
+                         <img src="{% static './image/cardimage1.jpg' %}" alt="" class="cardimg">
+                  </div>
+                  <div class="col-8">
+                           we are providing the most accuraacte calculater that helps to provide the best price for your dream house.
+                           <br>
+                           <br>
+                           <button><a href="{% url 'house_price' %}" style="text-decoration:None; color:red;">Calculate Price</a> </button>
+                           <button>Enquire</button>
+                  </div>
+                    
+          </div>
+           
+                    
+          </div>
+                <div class="card container mb-1 text-dark" >
+          <div class="card-body row" >
+                  <div class="col-4">
+                         <img src="{% static './image/cardimage2.jpg' %}" alt="" class="cardimg">
+                  </div>
+                  <div class="col-8">
+                        we are providing the best calculator for checking the car price.
+                        <br>
+                           <br>
+                           <button><a href="{% url 'car_price' %}" style="text-decoration:None; color:red;">Calculate Price</a> </button>
+                           <button>Enquire</button>
+                  </div>
+                    
+          </div>          
+          </div>
+               <div class="card container mb-1 text-dark" >
+          <div class="card-body row" >
+                  <div class="col-4">
+                         <img src="{% static './image/cardimage3.jpg' %}" alt="" class="cardimg">
+                  </div>
+                  <div class="col-8">
+                          Best calculator for the calculating the laptop price.
+                          <br>
+                           <br>
+                           <button><a href="{% url 'laptop_price' %}" style="text-decoration:None; color:red;">Calculate Price</a>   </button>
+                           <button>Enquire</button>
+                  </div>
+                    
+          </div>          
+          </div>
+               <div class="card container mb-1 text-dark" >
+          <div class="card-body row" >
+                  <div class="col-4">
+                         <img src="{% static './image/cardimage4.jpg' %}" alt="" class="cardimg">
+                  </div>
+                  <div class="col-8">
+                          We are providing the best machine algo for the predicting the mobile price.
+                          <br>
+                           <br>
+                           <button> <a href="{% url 'phone_price' %}" style="text-decoration:None; color:red;">Calculate Price</a> </button>
+                           <button>Enquire</button>
+                  </div>
+                    
+          </div>          
+          </div>
+
+                </div>
+                 <button style="text-align:'center';" class="align-content-center text-dark"><a href="#sec1">Back to top</a> </button>
+          </div>
+          {% include "footer.html" %}
